@@ -5,17 +5,17 @@ import java.util.List;
 
 public class Preguntas implements Jugables{
 	
-	private List<Preguntas> listaDePreguntas;
+	private List<String> listaDePreguntas;
 	private String pregunta;
 	
 	public  Preguntas(String unaPregunta) {
 	this.pregunta = unaPregunta;
-	this.listaDePreguntas = new ArrayList<Preguntas>();
+	this.listaDePreguntas = new ArrayList<String>();
 	
 	}
 
 	
-	public void agregarPregunta (Preguntas unaPregunta) {
+	public void agregarPregunta (String unaPregunta) {
 		this.listaDePreguntas.add(unaPregunta);
 	}
 	
@@ -30,8 +30,13 @@ public class Preguntas implements Jugables{
 	}
 
 
-	public List<Preguntas> getListaDePreguntas() {
+	public List<String> getListaDePreguntas() {
 		return listaDePreguntas;
+	}
+
+
+	public String getPregunta() {
+		return pregunta;
 	}
 	
 	
