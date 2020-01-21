@@ -1,20 +1,23 @@
 
 public class MainJugada {
 
-
+	public MainJugada() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public static void main(String[] args) {
 		
-		Preguntas primerPregunta = new Preguntas("como te llamas");
+		Pregunta primerPregunta = new Pregunta ();
 		
+
 				
-		Respuestas unaRespuesta = new Respuestas();
-		Partidas unaPartida = new Partidas();
+		Respuesta unaRespuesta = new Respuesta();
+		Partida unaPartida = new Partida();
 		
 		unaPartida.agregarJugables(primerPregunta);
 		unaPartida.agregarJugables(unaRespuesta);
 		
-		UsuarioVip unUsuarioVip = new UsuarioVip ("Juan", "Perez", "juanp@hotmail.com", 1234, "ok");
+		UsuarioVip unUsuarioVip = new UsuarioVip ("Juan", "Perez", "juanp@hotmail.com", "A1234", "ok");
 		unaPartida.agregarUsuario(unUsuarioVip);
 		System.out.println(unUsuarioVip);
 		System.out.println(unaPartida);

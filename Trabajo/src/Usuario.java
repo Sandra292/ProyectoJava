@@ -1,12 +1,12 @@
 
-public abstract class Usuarios {
+public abstract class Usuario {
 	private String nombre;
 	private String apellido;
 	protected String email;
-	private Integer contraseña;
+	private String contraseña;
 	private Integer puntaje;
 
-	public Usuarios(String unNombre, String unApellido, String unEmail, Integer unaContraseña, Integer unPuntaje ) {
+	public Usuario(String unNombre, String unApellido, String unEmail, String unaContraseña, Integer unPuntaje ) {
 		nombre = unNombre;
 		apellido = unApellido;
 		email = unEmail;
@@ -40,6 +40,8 @@ public abstract class Usuarios {
 	public void jugar() {
 		System.out.println("Estoy jugando");
 	}
+	
+
 	
 	
 	

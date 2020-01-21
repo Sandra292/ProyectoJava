@@ -1,5 +1,5 @@
 
-public interface Jugables {
+public interface Jugable {
 	public void jugar();
 		
 	}
